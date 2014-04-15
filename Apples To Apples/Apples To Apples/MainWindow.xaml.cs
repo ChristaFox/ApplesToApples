@@ -28,8 +28,8 @@ namespace Apples_To_Apples
         public Rectangle DrawCard(int left, int top, String message, SolidColorBrush color, Canvas canvas)
         {
             Rectangle rect = new Rectangle();
-            rect.Width = 200;
-            rect.Height = 300;
+            rect.Width = 150;
+            rect.Height = 200;
             rect.Fill = color;
 
             canvas.Children.Add(rect);
@@ -51,6 +51,11 @@ namespace Apples_To_Apples
                 JudgeView.Visibility = System.Windows.Visibility.Visible;
             else
                 PlayerView.Visibility = System.Windows.Visibility.Visible; 
+        }
+
+        private void BtnEnd_Click(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }

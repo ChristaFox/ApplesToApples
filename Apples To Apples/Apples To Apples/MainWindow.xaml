@@ -36,7 +36,7 @@
                    HorizontalContentAlignment="Center" Canvas.Bottom="28" FontSize="36" Foreground="White" Canvas.Left="549" Canvas.Top="121"/>
             <Label Name="LblWaitForPlyrs" Content="You can continue to wait for players or start the game."
                    HorizontalContentAlignment="Center" Canvas.Bottom="28" FontSize="36" Foreground="White" Canvas.Left="10" Canvas.Top="313"/>
-            <Button Name="ButtonStart" Canvas.Left="389" Canvas.Top="270" Width="92" FontSize="20" 
+            <Button Name="BtnStart" Canvas.Left="389" Canvas.Top="270" Width="92" FontSize="20" 
                     Content="Start" Height="38" Click="ButtonStart_Click" />
         </Canvas>
         <Canvas Name="PlayerView" Visibility="Collapsed">

@@ -11,3 +11,6 @@ c:\users\camille\documents\visual studio 2013\Projects\Apples To Apples\Apples T
 c:\users\camille\documents\visual studio 2013\Projects\Apples To Apples\Apples To Apples\obj\Debug\Apples To Apples.csproj.GenerateResource.Cache
 c:\users\camille\documents\visual studio 2013\Projects\Apples To Apples\Apples To Apples\obj\Debug\Apples To Apples.exe
 c:\users\camille\documents\visual studio 2013\Projects\Apples To Apples\Apples To Apples\obj\Debug\Apples To Apples.pdb
+C:\Users\Camille\Documents\GitHub\ApplesToApples\Apples To Apples\Apples To Apples\bin\Debug\Apples To Apples.exe.config
+C:\Users\Camille\Documents\GitHub\ApplesToApples\Apples To Apples\Apples To Apples\obj\Debug\Apples To Apples.exe
+C:\Users\Camille\Documents\GitHub\ApplesToApples\Apples To Apples\Apples To Apples\obj\Debug\Apples To Apples.pdb

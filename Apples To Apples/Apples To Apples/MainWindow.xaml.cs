@@ -61,7 +61,9 @@ namespace Apples_To_Apples
 
         private void BtnEnd_Click(object sender, RoutedEventArgs e)
         {
-            DrawCard(100, 100, "This is a tester card.", Brushes.GreenYellow, PlayerView);
+            JudgeView.Visibility = System.Windows.Visibility.Collapsed;
+            PlayerView.Visibility = System.Windows.Visibility.Collapsed;
+            ResultsPage.Visibility = System.Windows.Visibility.Visible;
         }
     }
 }

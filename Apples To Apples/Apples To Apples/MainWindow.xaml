@@ -56,6 +56,10 @@
         </Canvas>
         <Canvas Name="JudgeView" Visibility="Collapsed">
         </Canvas>
+        <Canvas Name="ResultsPage" Visibility="Collapsed">
+            <Label Name="LblResults" Content="Results" Canvas.Top="33" Height="73" Width="892" 
+                   FontSize="40" Foreground="White" HorizontalContentAlignment="Center"/>
+        </Canvas>
     </DockPanel>
 
 </Window>

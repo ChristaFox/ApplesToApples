@@ -1,0 +1,49 @@
+﻿<Window x:Class="Apples_To_Apples.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Background="Black"
+        Title="Apples to Apples" Height="600" Width="900">
+
+    <Window.Resources>
+        <Style x:Key="TitleStyle" TargetType="Label" >
+            <Setter Property="FontSize" Value="100" />
+            <Setter Property="Padding" Value="10" />
+            <Setter Property="Background" Value="White" />
+            <Setter Property="Foreground" Value="Red" />
+            <Setter Property="HorizontalContentAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="CanvasStyle" TargetType="Canvas">
+            <Setter Property="Background" Value="Black" />
+            <Setter Property="Margin" Value="0,1,0,0" />
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Padding" Value="10, 3" />
+        </Style>
+    </Window.Resources>
+
+    <DockPanel>
+        <Label DockPanel.Dock="Top" Name="LblTitle" Content="Apples to Apples" 
+               Style="{StaticResource TitleStyle}" />
+        <Label DockPanel.Dock ="Bottom" Name="Copyright" 
+                   Content="Camille and Christa ©" FontSize="10" 
+                   Canvas.Left="0" Canvas.Bottom="0" Foreground="White"/>
+        <Canvas Name="StartPage" Style="{StaticResource CanvasStyle}" >
+            <Label Name="LblDescription" Content="A game of hilarious comparisons!"
+                   FontSize="70" Foreground="GreenYellow" FontFamily="MoolBoran" Width="892" HorizontalContentAlignment="Center"/>
+            <Label Name="LblStart" Content="You are player: "
+                   HorizontalContentAlignment="Center" Canvas.Bottom="28" FontSize="36" Foreground="White" Canvas.Left="289" Canvas.Top="121"/>
+            <Label Name="LblPlayerNum_1" Content="0"
+                   HorizontalContentAlignment="Center" Canvas.Bottom="28" FontSize="36" Foreground="White" Canvas.Left="549" Canvas.Top="121"/>
+            <Label Name="LblWaitForPlyrs" Content="You can continue to wait for players or start the game."
+                   HorizontalContentAlignment="Center" Canvas.Bottom="28" FontSize="36" Foreground="White" Canvas.Left="10" Canvas.Top="313"/>
+            <Button Name="ButtonStart" Canvas.Left="389" Canvas.Top="270" Width="92" FontSize="20" 
+                    Content="Start" Height="38" Click="ButtonStart_Click" />
+        </Canvas>
+        <Canvas Name="PlayerView" Visibility="Collapsed">
+            <Button Name="ButtonEndGame"/>
+        </Canvas>
+        <Canvas Name="JudgeView" Visibility="Collapsed">
+        </Canvas>
+    </DockPanel>
+
+</Window>

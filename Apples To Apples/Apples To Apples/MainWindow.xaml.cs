@@ -32,9 +32,15 @@ namespace Apples_To_Apples
             rect.Height = 200;
             rect.Fill = color;
 
+            Label cardLbl = new Label();
+            cardLbl.Content = message;
+
             canvas.Children.Add(rect);
+            canvas.Children.Add(cardLbl);
             Canvas.SetLeft(rect, left);
+            Canvas.SetLeft(cardLbl, left);
             Canvas.SetTop(rect, top);
+            Canvas.SetTop(cardLbl, top);
             return rect;
         }
 
@@ -55,7 +61,7 @@ namespace Apples_To_Apples
 
         private void BtnEnd_Click(object sender, RoutedEventArgs e)
         {
-            
+            DrawCard(100, 100, "This is a tester card.", Brushes.GreenYellow, PlayerView);
         }
     }
 }

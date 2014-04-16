@@ -46,7 +46,7 @@ namespace Apples_To_Apples
 
         public Boolean IsJudge()
         {
-            return false;
+            return true;
         }
 
         private void ButtonStart_Click(object sender, RoutedEventArgs e)

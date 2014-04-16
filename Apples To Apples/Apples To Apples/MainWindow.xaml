@@ -87,6 +87,9 @@
             <TextBox Name="TxtBoxPlyrNum_2" Text="0" HorizontalContentAlignment="Center" Canvas.Left="492" 
                      Canvas.Top="520" Width="22"/>
         </Canvas>
+        <Canvas Name="DropOutPage" Visibility="Collapsed">
+            
+        </Canvas>
     </DockPanel>
 
 </Window>

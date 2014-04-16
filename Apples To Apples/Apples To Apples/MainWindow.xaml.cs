@@ -62,13 +62,13 @@ namespace Apples_To_Apples
         private void BtnEnd_Click(object sender, RoutedEventArgs e)
         {
             JudgeView.Visibility = System.Windows.Visibility.Collapsed;
-            PlayerView.Visibility = System.Windows.Visibility.Collapsed;
             ResultsPage.Visibility = System.Windows.Visibility.Visible;
         }
 
         private void BtnDropOut_Click(object sender, RoutedEventArgs e)
         {
-
+            PlayerView.Visibility = System.Windows.Visibility.Collapsed;
+            DropOutPage.Visibility = System.Windows.Visibility.Visible;
         }
     }
 }

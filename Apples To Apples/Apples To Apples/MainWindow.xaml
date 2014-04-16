@@ -57,8 +57,20 @@
         <Canvas Name="JudgeView" Visibility="Collapsed">
         </Canvas>
         <Canvas Name="ResultsPage" Visibility="Collapsed">
-            <Label Name="LblResults" Content="Results" Canvas.Top="33" Height="73" Width="892" 
+            <Label Name="LblGameOver" Content="Game Over" Foreground="Orange" Height="61" Width="892" 
+                   HorizontalContentAlignment="Center" FontSize="40"/>
+            <Label Name="LblResults" Content="Results" Canvas.Top="61" Height="73" Width="367" 
                    FontSize="40" Foreground="White" HorizontalContentAlignment="Center"/>
+            <Label Name="LblPlayerResult" Content="Player                                                           Awesome Points"
+                   Foreground="Yellow" Canvas.Left="86" Canvas.Top="150" Width="749" FontSize="25"/>
+            <Label Name="LblCongrats" Content="Contratulations, Player      ! You won!" Foreground="LightBlue" 
+                   Canvas.Top="509" Width="892" FontSize="20" HorizontalContentAlignment="Center"/>
+            <TextBox Name="TxtBoxPlyrNum_1" Text="0" Canvas.Left="177" Canvas.Top="160" Height="28" Width="24" 
+                     FontSize="15" HorizontalContentAlignment="Center"/>
+            <TextBox Name="TxtBoxAwePts" Text="0" HorizontalContentAlignment="Center" Canvas.Left="523" 
+                     Canvas.Top="160" Height="28" Width="25" FontSize="15"/>
+            <TextBox Name="TxtBoxPlyrNum_2" Text="0" HorizontalContentAlignment="Center" Canvas.Left="492" 
+                     Canvas.Top="520" Width="22"/>
         </Canvas>
     </DockPanel>
 

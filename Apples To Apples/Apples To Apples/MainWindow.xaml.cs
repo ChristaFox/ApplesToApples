@@ -46,7 +46,7 @@ namespace Apples_To_Apples
 
         public Boolean IsJudge()
         {
-            return true;
+            return false;
         }
 
         private void ButtonStart_Click(object sender, RoutedEventArgs e)
@@ -64,6 +64,11 @@ namespace Apples_To_Apples
             JudgeView.Visibility = System.Windows.Visibility.Collapsed;
             PlayerView.Visibility = System.Windows.Visibility.Collapsed;
             ResultsPage.Visibility = System.Windows.Visibility.Visible;
+        }
+
+        private void BtnDropOut_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
